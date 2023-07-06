@@ -23,7 +23,7 @@
             <td>{{item.color}}</td>
             <td>{{item.price}}</td>
             <td>
-              <a routerLink="/product/edit"><i class="fa-solid fa-pencil"></i></a>
+              <a (click)="onEdit(item)"><i class="fa-solid fa-pencil"></i></a>
               <a><i class="fa-sharp fa-solid fa-trash"></i></a>
             </td>      
           </tr>

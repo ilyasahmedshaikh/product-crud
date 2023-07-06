@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,12 +10,21 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class ProductEditComponent {
   productForm: any = FormGroup;
+  data: any = {};
 
   constructor(
-    private fb: FormBuilder
-  ) {}
+    private fb: FormBuilder,
+    private router : Router
+  ) {
+    this.data = this.router.getCurrentNavigation()?.extras?.state;
+  }
 
   ngOnInit() {
+    this.formInIt();
+    this.showData();
+  }
+
+  formInIt() {
     this.productForm = this.fb.group({
       productName: ['', Validators.required],
       color: ['#ffffff', Validators.required],
@@ -26,5 +36,17 @@ export class ProductEditComponent {
 
   onEditProduct(form: FormGroup) {
     console.log(form.value);
+  }
+
+  showData() {
+    console.log(this.data);
+    
+    this.productForm.patchValue({
+      productName: this.data.name,
+      color: this.data.color,
+      price: this.data.price,
+      description: this.data.description,
+      featured: this.data.featured,
+    });
   }
 }
