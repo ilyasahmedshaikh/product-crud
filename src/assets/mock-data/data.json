@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "img": "https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/brand-landing-pages/adidas/2023/spring/deluxe_story2.jpg",
+      "name": "Adidas Shoes",
+      "color": "#ffffff",
+      "price": "15",
+      "description": "Lorem ipsm dummy text",
+      "featured": false
+    },
+    {
+      "id": 2,
+      "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/newscms/2021_14/3463208/210408-nike-lil-nas-satan-shoe-ac-635p.jpg",
+      "name": "Nike Shoes",
+      "color": "#ffffff",
+      "price": "25",
+      "description": "Lorem ipsm dummy text",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "img": "https://i.pinimg.com/736x/e1/fb/2c/e1fb2c0676b0070fc00367593a01c9b2--basketball-equipment-nike-basketball.jpg",
+      "name": "Under Armour",
+      "color": "#ffffff",
+      "price": "40",
+      "description": "Lorem ipsm dummy text",
+      "featured": false
+    },
+    {
+        "id": 1,
+        "img": "https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/brand-landing-pages/adidas/2023/spring/deluxe_story2.jpg",
+        "name": "Adidas Shoes",
+        "color": "#ffffff",
+        "price": "15",
+        "description": "Lorem ipsm dummy text",
+        "featured": false
+      },
+      {
+        "id": 2,
+        "img": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/newscms/2021_14/3463208/210408-nike-lil-nas-satan-shoe-ac-635p.jpg",
+        "name": "Nike Shoes",
+        "color": "#ffffff",
+        "price": "25",
+        "description": "Lorem ipsm dummy text",
+        "featured": true
+      },
+      {
+        "id": 3,
+        "img": "https://i.pinimg.com/736x/e1/fb/2c/e1fb2c0676b0070fc00367593a01c9b2--basketball-equipment-nike-basketball.jpg",
+        "name": "Under Armour",
+        "color": "#ffffff",
+        "price": "40",
+        "description": "Lorem ipsm dummy text",
+        "featured": false
+      }
+  ]

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { ProductRoutingModule } from './product-routing.module';
 import { ProductComponent } from './product.component';
@@ -20,7 +21,8 @@ import { ProductEditComponent } from './product-edit/product-edit.component';
   imports: [
     CommonModule,
     ProductRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ]
 })
 export class ProductModule { }
