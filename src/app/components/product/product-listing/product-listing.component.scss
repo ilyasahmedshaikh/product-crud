@@ -1,0 +1,21 @@
+
+.create-btn {
+    float: right;
+}
+.listing {
+    tbody {
+        td {
+            img {
+                width: 60px;
+                height: auto;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+            }
+            a {
+                margin-right: 18px;
+                color: #0d6efd;
+                cursor: pointer;
+            }
+        }
+    }
+}

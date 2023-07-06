@@ -1,0 +1,33 @@
+<div class="listing pt-4">
+    <div class="container">
+      <div class="create-btn pb-4">
+        <button type="button" class="btn btn-primary px-5" routerLink="/product/create">Create Product</button>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Image</th>
+            <th scope="col">Name</th>
+            <th scope="col">Color</th>
+            <th scope="col">Price</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of data">
+            <th scope="row">{{item.id}}</th>
+            <td><img src="{{item.img}}"></td>
+            <td>{{item.name}}</td>
+            <td>{{item.color}}</td>
+            <td>{{item.price}}</td>
+            <td>
+              <a routerLink="/product/edit"><i class="fa-solid fa-pencil"></i></a>
+              <a><i class="fa-sharp fa-solid fa-trash"></i></a>
+            </td>      
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
