@@ -15,6 +15,14 @@ export class ProductCreateComponent {
   ) {}
 
   ngOnInit() {
+    this.formInIt();
+  }
+
+  onCreateProduct(form: FormGroup) {
+    console.log(form.value);
+  }
+
+  formInIt() {
     this.productForm = this.fb.group({
       productName: ['', Validators.required],
       color: ['#ffffff', Validators.required],
@@ -22,10 +30,6 @@ export class ProductCreateComponent {
       description: ['', Validators.required],
       featured: [false]
     });
-  }
-
-  onCreateProduct(form: FormGroup) {
-    console.log(form.value);
   }
 
 }
