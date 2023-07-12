@@ -31,4 +31,8 @@ export class ProductListingComponent {
       this.data = res;
     })
   }
+
+  onDelete(id: any) {
+    this.data = this.data.filter((item: any) => item.id !== id);
+  }
 }
